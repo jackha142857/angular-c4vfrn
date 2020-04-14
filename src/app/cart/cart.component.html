@@ -1,0 +1,11 @@
+<h3>Cart</h3>
+
+
+<div class="cart-item" *ngFor="let item of items">
+  <a [routerLink]="['/products', item.id]" title="Details">
+    <span>{{ item.name }}</span>
+  </a>
+  <span>{{ item.price | currency : 'AUD' }}</span>
+</div>
+
+<p *ngIf="items.length == 0">Cart is empty!</p>
