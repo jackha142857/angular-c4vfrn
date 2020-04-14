@@ -1,5 +1,8 @@
 <h3>Cart</h3>
 
+<p>
+  <a routerLink="/shipping">Shipping Prices</a>
+</p>
 
 <div class="cart-item" *ngFor="let item of items">
   <a [routerLink]="['/products', item.id]" title="Details">
